@@ -1,0 +1,55 @@
+<!DOCTYPE html> 
+<html> 
+	<head> 
+		<title>Langsdale Library</title> 
+		<meta name="viewport" content="width=device-width, initial-scale=1"> 
+		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
+		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+		style for background image 
+		<style> 
+			.ui-content {
+				    background : transparent url(http://langsdale.ubalt.edu/m-test/ipad/images/take2.jpg) 0 0 no-repeat fixed !important;
+				    background-size : cover;
+				}​​
+		</style>
+	</head> 
+	
+	<body> 
+		<div data-role="page" data-theme="d">
+			<div data-role="header" data-theme="b">
+				<h1>Welcome to Langsdale Library</h1>
+			</div>
+			<div data-role="content">
+				<p>&nbsp;</p>				
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><label for="search-basic"><h2>Search the catalog...</h2></label>
+					
+				<!-- input type="search" name="search" id="search-basic" value="" / -->
+				<!-- BEGIN worldcat.org search box -->			
+					<form name="wcfn" name="wcfn" id="wcfn" method="get" accept-charset="UTF-8" action="http://ubalt.worldcat.org/m/search" target="_top">
+						<input type="hidden" name="qt" value="affiliate_wcl_all" />
+						<input type="hidden" name="ai" value="wclocal_ubalt" />
+						<input type="search" name="q" id="search-basic" data-theme="d" placeholder="Enter subject, title or author" />
+					</form>
+					<!-- END worldcat.org search box --></div>
+					<div class="ui-block-b"><!-- <img src="http://langsdale.ubalt.edu/m-test/ipad/sig_Blue_LANGSDALE.jpg"/>--> &nbsp;</div>
+				</div>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				<div class="ui-grid-a">
+					<div class="ui-block-a"><a href="index.html" data-role="button" data-theme="c"><h3>Book finder: <br/>locate your call number</h3></a></div>
+					<div class="ui-block-b"><a href="index.html" data-role="button" data-theme="c"><h3>Library Floor Plans: <br/>maps and more</h3></a></div>
+					<div class="ui-block-b"><a href="chat.html" data-role="button" data-theme="c" data-transition="flip"><h3>Ask a Librarian: <br/>chat reference</h3></a></div>
+					<div class="ui-block-b"><a href="index.html" data-role="button" data-theme="c"><h3>Library Feedback: <br/>what's on your mind?</h3></a></div>
+				</div>
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>				
+
+			</div><!-- end content -->
+			<div data-role="footer" data-theme="b">
+				<p>&nbsp;</p>
+			</div><!-- end footer -->
+		</div><!-- end page -->
+	</body>
+</html>
