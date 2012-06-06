@@ -10,17 +10,56 @@
 	
 	<body> 
 		<div data-role="page" data-theme="d">
+			
 			<div data-role="header" data-theme="b">
 				<h1>Langsdale Library: Feedback</h1>
-			</div>
+			</div> <!-- end header -->
 			<div data-role="content">
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id magna dui, vel posuere ipsum. Pellentesque laoreet mollis condimentum. Phasellus iaculis suscipit diam a euismod. Nunc urna urna, interdum a congue vel, porta eu dolor. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Aliquam at lacinia est. Maecenas congue lectus ligula. Curabitur a sapien ligula. Proin suscipit iaculis dapibus. In dolor nisi, sodales quis aliquet placerat, vestibulum in est. Cras quis pellentesque leo. Curabitur tristique semper nisi id malesuada. Vestibulum non metus metus, a faucibus nulla. Etiam laoreet nisi ut turpis tincidunt quis varius sapien porta. Etiam vel dolor velit, ut pulvinar erat. In ipsum turpis, rutrum a blandit sit amet, lacinia non felis.</p>				
-				<p>Donec malesuada elit nec nisl fermentum nec euismod urna blandit. Morbi ac sem nec orci dapibus lobortis et sed justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis laoreet sem in nisl vestibulum a eleifend magna imperdiet. Morbi lobortis sem vitae nisl ultricies nec porta tellus imperdiet. Sed nulla ante, tincidunt at condimentum sit amet, mattis at orci. Aliquam bibendum libero blandit nunc sollicitudin consectetur.</p>
-				<p>Nunc nec magna congue est pharetra feugiat sed tempor turpis. Donec vitae nunc nibh. Vivamus iaculis tincidunt neque et ullamcorper. Cras a risus enim. Mauris quis tellus a quam aliquet fermentum eu et ligula. Nulla quis turpis vel arcu sodales convallis eget eu lacus. Phasellus pellentesque molestie sem vitae posuere. Sed ut nisi nisl. Pellentesque semper ultricies urna aliquet eleifend. Sed ultricies, orci eget blandit euismod, turpis eros ullamcorper risus, quis vestibulum tortor turpis sed dolor.</p>
-			</div><!-- end content -->
-			<div data-role="footer" data-theme="b">
+				<!-- the form posts to a an external .cfm page, based on ideas from Raymond Camden's Blog: "jQuery Mobile Example - Paged Search Results"
+						http://www.raymondcamden.com/index.cfm/2011/2/25/jQuery-Mobile-Example--Paged-Search-Results -->
 				<p>&nbsp;</p>
-			</div><!-- end footer -->
+				<p>&nbsp;</p>
+				<p>&nbsp;</p>
+				
+					
+				<form action="ipad-feedback.cfm" method="post">
+					<div class="ui-body ui-body-d ui-corner-all" style="width:60%; margin-left:auto; margin-right:auto; ">
+						<!-- Name -->
+							<label for="name"><strong>Name</strong></h2></label>
+						   	<input type="text" name="name" id="name" value="" placeholder="Enter your name, please." />
+								    		
+					   	<!-- Email -->	
+					  		<label for="email"><strong>Email</strong></label>
+				   	   		<input type="email" name="email" id="email" value="" placeholder="What is your email address?" />
+					
+				   		<!-- Comments -->
+							<label for="comments"><strong>Comments</strong></h2></label>
+							<textarea name="comments" id="comments" placeholder="Let us know what your experience at the library was like."></textarea>
+							<br/>
+					</div> <!-- form background -->	 
+			
+						<!-- submit / reset -->
+							<div class="ui-grid-c">
+								<div class="ui-block-a">&nbsp;</div>
+								<div class="ui-block-b">
+									<input type="submit" value="Submit" />
+								</div>
+								<div class="ui-block-c">
+									<input type="reset" value="Reset" />
+								</div>
+								<div class="ui-block-d">&nbsp;</div>
+							</div>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+						<p>&nbsp;</p>
+	   			</form>
+   				
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
+					<p>&nbsp;</p>
 		</div><!-- end page -->
 	</body>
 </html>
