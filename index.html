@@ -18,6 +18,37 @@
     			border-bottom-left-radius: 15px;
     			border-bottom-right-radius: 15px;
 				}
+			.bg-map {
+				border-top-left-radius: 15px; 
+				border-top-right-radius: 15px; 
+				border-bottom-left-radius: 15px; 
+				border-bottom-right-radius: 15px; 
+				border-style:solid; 
+				border-color:whitesmoke; 
+				background-color:white;
+				}
+					
+			.map-icon {
+				padding-bottom:100px; 
+				padding-left:100px; 
+				}
+			
+			.map-index {
+				padding-left:10px; 
+				padding-top:10px; 
+				padding-bottom:5px;
+				}
+				
+			.map-1st {
+				padding-left:10px; 
+				padding-top:10px; 
+				padding-bottom:5px; 
+				}
+				
+			.map-1st-key {
+				padding-bottom:100px; 
+				padding-left:100px; 
+				}
 		</style>
 	</head> 
 
@@ -27,24 +58,20 @@
 				<h1>Welcome to Langsdale Library</h1>
 			</div>
 			<div data-role="content">
-				<p>&nbsp;</p>
 				<p>&nbsp;</p>				
-				<div class="ui-grid-a"> <!-- start search grid -->
-						<div class="ui-block-a">
-							<label for="search-basic"><h2>Search the catalog...</h2></label>
-							<!-- input type="search" name="search" id="search-basic" value="" / -->
-							<!-- BEGIN worldcat.org search box -->			
-							<div class="ui-bar ui-bar-c">
-								<form name="wcfn" name="wcfn" id="wcfn" method="get" accept-charset="UTF-8" action="http://ubalt.worldcat.org/m/search" target="_top">
-									<input type="hidden" name="qt" value="affiliate_wcl_all" />
-									<input type="hidden" name="ai" value="wclocal_ubalt" />
-									<input type="search" name="q" id="search-basic" data-theme="d" placeholder="Enter subject, title or author" style="font-size:150%;" />
-								</form>
-							</div> <!-- end ui-bar div -->
-						<!-- END worldcat.org search box -->
-					</div> <!-- end block a -->
-					<div class="ui-block-b"><!-- <img src="http://langsdale.ubalt.edu/m-test/ipad/sig_Blue_LANGSDALE.jpg"/>--> &nbsp;</div>
-				</div> <!-- end search grid -->
+					<!-- <label for="search-basic"><h2>Search the catalog...</h2></label> -->
+					<!-- BEGIN worldcat.org search box -->
+					<!-- search bar background: ui-bar ui-bar-c -->	
+						<div class="ui-bar ui-bar-c"> 		
+							<form name="wcfn" name="wcfn" id="wcfn" method="get" accept-charset="UTF-8" action="http://ubalt.worldcat.org/m/search" target="_top">
+								<input type="hidden" name="qt" value="affiliate_wcl_all" />
+								<input type="hidden" name="ai" value="wclocal_ubalt" />
+								<input type="search" name="q" id="search-basic" data-theme="d" placeholder="Search the catalog: enter subject, title or author" style="font-size:200%;" />
+							</form>
+						</div>
+					<!-- end search bar background -->
+					<!-- END worldcat.org search box -->
+				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 				<div class="ui-grid-a">
 					<div class="ui-block-a"><a href="locator.html" data-role="button" data-theme="c" data-transition="flip"><h4>Book Locator: <br/>find your call number</h4></a></div>
