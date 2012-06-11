@@ -6,50 +6,8 @@
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
-		style for background image 
-		<style> 
-			.ui-content {
-				background : transparent url(http://langsdale.ubalt.edu/ipad-kiosk/images/BACKDROP2.jpg) 0 0 no-repeat fixed !important;
-				background-size : cover;
-				}
-			.ui-bar {
-				border-top-left-radius: 15px;
-    			border-top-right-radius: 15px;
-    			border-bottom-left-radius: 15px;
-    			border-bottom-right-radius: 15px;
-				}
-			.bg-map {
-				border-top-left-radius: 15px; 
-				border-top-right-radius: 15px; 
-				border-bottom-left-radius: 15px; 
-				border-bottom-right-radius: 15px; 
-				border-style:solid; 
-				border-color:whitesmoke; 
-				background-color:white;
-				}
-					
-			.map-icon {
-				padding-bottom:100px; 
-				padding-left:100px; 
-				}
-			
-			.map-index {
-				padding-left:10px; 
-				padding-top:10px; 
-				padding-bottom:5px;
-				}
-				
-			.map-1st {
-				padding-left:10px; 
-				padding-top:10px; 
-				padding-bottom:5px; 
-				}
-				
-			.map-1st-key {
-				padding-bottom:100px; 
-				padding-left:100px; 
-				}
-		</style>
+		<!--  Custom CSS -->
+		<link rel="stylesheet" href="./kiosk.css" />
 	</head> 
 
 	<body> 
@@ -66,19 +24,32 @@
 							<form name="wcfn" name="wcfn" id="wcfn" method="get" accept-charset="UTF-8" action="http://ubalt.worldcat.org/m/search" target="_top">
 								<input type="hidden" name="qt" value="affiliate_wcl_all" />
 								<input type="hidden" name="ai" value="wclocal_ubalt" />
-								<input type="search" name="q" id="search-basic" data-theme="d" placeholder="Search the catalog: enter subject, title or author" style="font-size:200%;" />
+								<input type="search" name="q" id="search-basic" data-theme="d" placeholder="Search the catalog: tap to enter subject, title or author" style="font-size:200%;" />
 							</form>
 						</div>
 					<!-- end search bar background -->
 					<!-- END worldcat.org search box -->
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
-				<div class="ui-grid-a">
+				<!-- <div class="ui-grid-a">
 					<div class="ui-block-a"><a href="locator.html" data-role="button" data-theme="c" data-transition="flip"><h4>Book Locator: <br/>find your call number</h4></a></div>
 					<div class="ui-block-b"><a href="floor-plans.html" data-role="button" data-theme="c" data-transition="flip"data-transition="flip"><h4>Floor Plans: <br/>library maps and more</h4></a></div>
 					<div class="ui-block-b"><a href="chat.html" data-role="button" data-theme="c" data-transition="flip"><h4>Ask a Librarian: <br/>chat reference</h4></a></div>
 					<div class="ui-block-b"><a href="feedback.html" data-role="button" data-theme="c" data-transition="flip"><h4>Library Feedback: <br/>what's on your mind?</h4></a></div>
-				</div>
+				</div>  -->
+			
+				
+				<div class="ui-grid-c">
+					<div class="ui-block-a">&nbsp;</div>
+					<div class="ui-block-b"><a href="chat.html" data-role="button" data-theme="c" data-transition="flip"><h4>Ask a Librarian: <br/>chat reference</h4></a></div>
+					<div class="ui-block-c"><a href="floor-plans.html" data-role="button" data-theme="c" data-transition="flip"data-transition="flip"><h4>Floor Plans: <br/>library maps and more</h4></a></div>
+					<div class="ui-block-d">&nbsp;</div>
+					<div class="ui-block-a">&nbsp;</div>
+					<div class="ui-block-b"><a href="feedback.html" data-role="button" data-theme="c" data-transition="flip"><h4>Library Feedback: <br/>what's on your mind?</h4></a></div>
+					<div class="ui-block-c">&nbsp;</div>
+					<div class="ui-block-d">&nbsp;</div>			
+				</div> 			
+
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>
 				<p>&nbsp;</p>	

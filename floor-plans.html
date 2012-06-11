@@ -6,6 +6,8 @@
 		<link rel="stylesheet" href="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.css" />
 		<script src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
 		<script src="http://code.jquery.com/mobile/1.1.0/jquery.mobile-1.1.0.min.js"></script>
+		<!--  Custom CSS -->
+		<link rel="stylesheet" href="./kiosk.css" />
 	</head> 
 	
 	<body> 
@@ -15,16 +17,17 @@
 			</div>
 			<div data-role="content">
 				<div class="bg-map">
-					<img class="map-index" src="images/map-index.jpg" width="640" height="619" alt="services index" usemap="#mapindex"/>	
+					<img class="map-index" src="images/map-index.jpg" width="640" height="619" alt="services index" usemap="#mapindex" />	
 						<map name="mapindex">
 							<area shape="rect" coords="0,0,640,101" alt="4th Floor" href="4th.html" />
 							<area shape="rect" coords="0,120,640,218" alt="3rd Floor" href="3rd.html" />
 							<area shape="rect" coords="0,245,640,370" alt="2nd Floor" href="2nd.html" />
-							<area shape="rect" coords="0,376,640,510" alt="1st Floor" href="1st.html" />
+							<area shape="rect" coords="0,376,640,510" alt="1st Floor" href="1st.html" data-transition="flip" />
 							<area shape="rect" coords="0,524,640,619" alt="Lower Level" href="lowerlevel.html" />
 						</map>
 					<img class="map-icon" src="images/map-icons.jpg" width="216" height="436" alt="building perspective drawings" />	
 				</div>
+				<p>&nbsp;</p>
 			</div><!-- end content -->
 		</div><!-- end page -->
 	</body>
