@@ -58,3 +58,34 @@
 	padding-left:25px; 
 	padding-right:10px; 
 	}
+	
+/* Locator */
+
+#myMap {
+	border: 1px solid #ccc;
+}
+
+#mapWrapper {
+	display:none;
+    width: 450px;
+    height:450px;
+    margin: 0px auto;
+    margin-top: 15px;
+    margin-bottom: 50px;
+}
+
+#callNumber {
+	font-family: Monospace;
+    /*height: 21px;
+    width: 320px;
+    font-size: 14pt;
+    padding: 8px;
+    border: 1px solid #ccc;*/
+}
+#loading {
+	width: 32px;
+    height:32px;
+    margin: 0px auto;
+    margin-top: 50px;
+	display: none;
+}
