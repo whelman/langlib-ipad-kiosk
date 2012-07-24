@@ -35,7 +35,7 @@
 				
 		</cfoutput>
 		
-		<cfmail to="whelman@ubalt.edu" from="#form.Email#" subject="Mobile Printing Feedback #form.Name#" type="html">
+		<cfmail to="whelman@ubalt.edu" from="#form.Email#" subject="iPad Kiosk Feedback from #form.Name#" type="html">
 			<p>
 	           	<strong>Name:</strong>	#form.name# <br/>
 	           	<strong>Email address:</strong> #form.email# <br/>			
